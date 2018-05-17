@@ -42,7 +42,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem "factory_bot_rails", "~> 4.0"
-  gem 'simplecov', require: false
+  gem 'simplecov', require: true
 end
 
 group :development do
