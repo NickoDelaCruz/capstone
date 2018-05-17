@@ -3,3 +3,7 @@
 <h3><%= @event.price %></h3>
 <h6><%= @event.description %></h6>
 <p><%= link_to "Return to events", events_path %></p>
+<p><%= link_to "Edit", edit_event_path(@event) %></p>
+<p><%= link_to "Delete", event_path(@event),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
